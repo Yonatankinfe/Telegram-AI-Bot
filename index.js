@@ -1,5 +1,9 @@
-
-
+// This is a simple Telegram bot that interacts with OpenAI's API or any other API.
+// It allows users to ask questions and stores their data in a CSV file.
+// The bot will ask for an OpenAI API key if the user doesn't have one stored.
+// It also handles user data and API key management.
+// The bot is built using the node-telegram-bot-api and openai packages
+// and uses CSV for storing user data.
 const TelegramBot = require('node-telegram-bot-api');
 const { createObjectCsvWriter } = require('csv-writer').object;
 const OpenAI = require('openai');
