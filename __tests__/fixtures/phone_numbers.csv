@@ -1,0 +1,4 @@
+USER ID,USER NAME,NAME,CHALLENGE ID,CHALLENGE LINK,INVITED PEOPLES
+101,userone,User One,challenge1,https://t.me/bot_name_Bot?start=user_id=101,2
+102,usertwo,User Two,,,
+103,userthree,User Three,challenge1,https://t.me/bot_name_Bot?start=user_id=103,2
