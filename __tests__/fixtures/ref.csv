@@ -1,0 +1,5 @@
+userId,username,timestamp,referredBy
+201,refuserA,01/01/2024,101
+202,refuserB,02/01/2024,102
+201,refuserA,03/01/2024,101
+203,refuserC,04/01/2024,103

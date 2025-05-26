@@ -1,0 +1,29 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "🤖🔗 Secure Telegram bot framework with OpenAI integration, user management, and conversation logging.# TelegramAI-Bridge",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yonatankinfe/Telegram-AI-Bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yonatankinfe/Telegram-AI-Bot/issues"
+  },
+  "homepage": "https://github.com/Yonatankinfe/Telegram-AI-Bot#readme",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "csv-writer": "^1.6.0",
+    "json2csv": "^6.0.0-alpha.2",
+    "node-telegram-bot-api": "^0.66.0",
+    "openai": "^4.103.0"
+  }
+}

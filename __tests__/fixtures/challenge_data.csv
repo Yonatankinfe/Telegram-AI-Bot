@@ -1,0 +1,4 @@
+CHALLENGE_ID,PARTICIPANTS,START_DATE,END_DATE,DETAILS,MESSAGE,STATUS
+challenge1,2,01/01/2024,10/01/2024,Test Challenge 1,Message for challenge 1,Approved
+challenge2,5,05/01/2024,15/01/2024,Test Challenge 2,Message for challenge 2,Pending
+challenge3,3,10/01/2024,20/01/2024,Old Challenge,Message for old challenge,Completed

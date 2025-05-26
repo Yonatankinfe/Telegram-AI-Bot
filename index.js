@@ -86,3 +86,49 @@ bot.on('message', async (msg) => {
 });
 
 console.log('Bot is running...');
+
+// Placeholder definitions for functions to be tested
+const allowedAdmins = [123456789, 987654321]; // Example admin IDs
+
+function isValidDate(dateString) {
+  // Basic format check
+  if (!/^\d{2}\/\d{2}\/\d{4}$/.test(dateString)) {
+    return false;
+  }
+  const parts = dateString.split("/");
+  const day = parseInt(parts[0], 10);
+  const month = parseInt(parts[1], 10);
+  const year = parseInt(parts[2], 10);
+
+  if (year < 1000 || year > 3000 || month === 0 || month > 12) {
+    return false;
+  }
+  const monthLength = [31, (year % 400 === 0 || (year % 100 !== 0 && year % 4 === 0)) ? 29 : 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+  return day > 0 && day <= monthLength[month - 1];
+}
+
+function isAdmin(chatId) {
+  return allowedAdmins.includes(chatId);
+}
+
+function parseDate(dateString) {
+  if (!isValidDate(dateString)) {
+    return null; // Or throw an error, depending on desired behavior
+  }
+  const parts = dateString.split("/");
+  const day = parseInt(parts[0], 10);
+  const month = parseInt(parts[1], 10); // Month is 1-based in input
+  const year = parseInt(parts[2], 10);
+  return new Date(year, month - 1, day); // Month is 0-based in Date constructor
+}
+
+module.exports = {
+  // bot, // Exporting bot might not be ideal for unit tests if it starts polling
+  // csvWriter, // Export if needed for specific tests
+  // apiKeys, // Export if needed
+  // awaitingApiKey, // Export if needed
+  isValidDate,
+  isAdmin,
+  parseDate,
+  allowedAdmins, // Exporting for test verification or direct use if necessary
+};
